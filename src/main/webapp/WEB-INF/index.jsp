@@ -8,6 +8,13 @@
     <title>Spring Boot First App</title>
 </head>
 <body>
+    <%
+ArrayList<String>a=new ArrayList<>();
+a.add("Kulesh");
+a.add("Alex");
+a.add("Johnny");
+getServletConfig().getServletContext().setAttribute("a",a);
+%>
 <myshortname:flow-control>
     <myshortname:when test="false"><h1>True</h1></myshortname:when>
     <myshortname:otherwise><h1>False</h1></myshortname:otherwise>
